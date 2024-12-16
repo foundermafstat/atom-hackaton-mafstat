@@ -1,0 +1,40 @@
+.sidebar {
+  @apply fixed top-0 left-0 h-full w-64 bg-gray-900 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50;
+
+  &.open {
+    @apply translate-x-0;
+  }
+}
+
+.toggleButton {
+  @apply fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-md;
+}
+
+.closeButton {
+  @apply absolute top-4 right-4 p-2 text-white;
+}
+
+.sidebarContent {
+  @apply p-4 space-y-2;
+}
+
+.sidebarItem {
+  @apply relative;
+}
+
+.sidebarLink {
+  @apply flex items-center space-x-2 p-2 rounded-md hover:bg-gray-800 transition-colors duration-200;
+
+  &.active {
+    @apply bg-red-600;
+  }
+}
+
+.submenuIcon {
+  @apply ml-auto;
+}
+
+.submenu {
+  @apply mt-2 space-y-2;
+}
+

@@ -1,0 +1,12 @@
+.comparisonContainer {
+  @apply space-y-8;
+
+  .chart {
+    @apply h-[400px];
+  }
+
+  .cardTitle {
+    @apply text-2xl font-bebas-neue text-white;
+  }
+}
+
